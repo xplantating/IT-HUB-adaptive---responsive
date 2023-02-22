@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="account.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+    <title>Личный кабинет</title>
+</head>
+<body>
+    <header class="header">
+    <img src="ulspu.jpeg" alt="УлГПУ" class="header-img">
+       <h2 class="text-logo">IT HUB</h2>
+        <nav id="navbar">
+            <ul class="nav-list">
+                <li>
+                    <a class="links_pages" href="">Новости</a>
+                </li>
+                <li>
+                    <a class="links_pages" href="">Обучение</a>
+                </li>
+                <li>
+                    <a class="links_pages" href="">Доска объявлений</a>
+                </li>
+                <li>
+                    <a href="" id="personal-account">Личный кабинет</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+                <ul class=" nav-list menu__box">
+                    <li>
+                        <a class="links_pages menu__item" href="{{ url_for('index') }}">Новости</a>
+                    </li>
+                    <li>
+                        <a class="links_pages menu__item" href="{{ url_for('education') }}">Обучение</a>
+                    </li>
+                    <li>
+                        <a class="links_pages menu__item" href="{{ url_for('dashboard')}}">Доска объявлений</a>
+                    </li>
+                    <li>
+                        <a class="links_pages menu__item" href="" id="personal-account">Личный кабинет</a>
+                    </li>
+                </ul>
+         </div>
+    </header>
+    <main>
+        <img id="avatar-img" src="avatar-default.png" alt="user" />
+        <div class="card-container">
+	<h3>Логин: TestUser</h3>
+	<h3>Имя: Test</h3>
+    <h3>Фамилия: User</h3>
+    <h3>Карма: 7</h3>
+	<div class="buttons">
+		<button class="shop">
+			Магазин
+		</button>
+    </div>
+    </main>
+    <footer class="footer">
+        <img src="ffmito.jpeg" alt="ФФМиТО" class="ffmito-img">
+        <h3 class="text-slogan">IT HUB - МЕСТО ГДЕ СОБИРАЮТСЯ IT-ВОЛОНТЁРЫ</h3>
+        <div class="images">
+            <a href="">
+                <img src="vk.jpg" alt="vk" class="images_vk-img" >
+            </a>
+            <a href="">
+                <img src="tg.jpg" alt="tg" class="images_tg-img" >
+            </a>
+            </div>
+    </footer>
+</body>
+</html>
+
